@@ -1,15 +1,11 @@
 <template lang="pug"> 
   div.app_container
     router-view
-    Login
 </template>
 
 <script>
-import Login from "./components/Login.vue";
-
 export default {
-  name: "App",
-  components: { Login },
+  name: "App"
 };
 </script>
 

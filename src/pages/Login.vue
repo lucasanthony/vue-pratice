@@ -1,14 +1,14 @@
 <template lang="pug"> 
   div.home_container
     div.login_container
-      Input(placeholder="Digite o email" type="name" @valueChanged="handleName")
-      Input(placeholder="Digite a senha" type="password" @valueChanged="handlePassword")
-      Button(text="Entrar" @clicked="handleLogin")
+      el-input(placeholder="Digite o email" v-model="email" size="medium")
+      el-input(placeholder="Digite a senha" v-model="password" type="password")
+      el-button(size="medium") Entrar
 </template>
 
 <script>
-import Button from "./Button.vue";
-import Input from "./Input.vue";
+import Button from "../components/Button.vue";
+import Input from "../components/Input.vue";
 // import Api from "../services/Api";
 
 export default {
@@ -19,13 +19,13 @@ export default {
   },
   data() {
     return {
-      name: "",
+      email: "",
       password: "",
     };
   },
   methods: {
     handleName(value) {
-      this.name = value;
+      this.email = value;
     },
     handlePassword(value) {
       this.password = value;

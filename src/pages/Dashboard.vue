@@ -3,16 +3,16 @@
 </template>
 
 <script>
-import Sidebar from '../components/Sidebar.vue';
+import Sidebar from "../components/Sidebar.vue";
 
 export default {
   name: "Dashboard",
-  components: {Sidebar}
+  components: { Sidebar },
 };
 </script>
 
 <style>
 h3 {
-    font-size: 200px;
+  font-size: 200px;
 }
 </style>
